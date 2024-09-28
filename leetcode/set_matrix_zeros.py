@@ -10,7 +10,6 @@ class Solution:
                 first_row_zero = True
                 break
 
-        # Scan the first col:
         for i in range(len(matrix)):
             current = matrix[i][0]
             if current == 0:
@@ -22,9 +21,7 @@ class Solution:
                 current = matrix[i][j]
                 print(f"{i}, {j}: {current}")
                 if current == 0:
-                    # Store that the row should be zero'd.
                     matrix[i][0] = 0
-                    # Store that the col should be zero'd.
                     matrix[0][j] = 0
 
         for j in range(1, len(matrix[0])):
