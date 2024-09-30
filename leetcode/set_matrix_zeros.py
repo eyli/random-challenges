@@ -19,7 +19,6 @@ class Solution:
         for i in range(1, len(matrix)):
             for j in range(1, len(matrix[0])):
                 current = matrix[i][j]
-                print(f"{i}, {j}: {current}")
                 if current == 0:
                     matrix[i][0] = 0
                     matrix[0][j] = 0
