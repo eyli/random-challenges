@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/count-the-number-of-fair-pairs/
+
 class Solution:
     def countFairPairs(self, nums: List[int], lower: int, upper: int) -> int:
         sorted_nums = sorted(nums)
